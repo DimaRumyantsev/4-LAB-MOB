@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #0052FF;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: 28px;
+}
+
+.menu {
+    height: 24px;
+}
+
+.hero {
+    padding-top: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+.features {
+    font-size: 12px;
+    letter-spacing: 3px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.laptop {
+    width: 240px;
+    margin: 10px auto 25px auto;
+    display: block;
+    transform: rotate(-12deg);
+}
+
+.cards {
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.card {
+    width: 90%;
+    max-width: 340px;
+    background: rgba(255,255,255,0.14);
+    color: white;
+    text-align: center;
+    padding: 26px 22px;
+    border-radius: 12px;
+}
+
+.icon {
+    height: 55px;
+    margin-bottom: 12px;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #FFA72B;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.45;
+    opacity: 0.95;
+}
+
+.more {
+    font-size: 14px;
+    margin-top: 14px;
+    display: inline-block;
+    text-decoration: underline;
+    color: white;
+}
+
+.footer {
+    background: #333;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 12px;
+    margin-top: auto;
+}
