@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #0052FF;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: 30px;
+}
+
+.menu {
+    height: 26px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    padding-top: 110px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 60px;
+    background: #0052FF;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.features {
+    font-size: 16px;
+    letter-spacing: 3px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: white;
+}
+
+.hero-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop {
+    width: 32vw;
+    min-width: 260px;
+    max-width: 420px;
+    transform: rotate(-12deg);
+}
+
+.cards {
+    padding: 80px 0;
+    background: #0052FF;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    text-align: center;
+    padding: 28px 24px;
+    border-radius: 14px;
+}
+
+.icon {
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #FFA72B;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.45;
+    opacity: 0.95;
+}
+
+.more {
+    font-size: 15px;
+    margin-top: 14px;
+    display: inline-block;
+    text-decoration: underline;
+    color: white;
+}
+
+.footer {
+    background: #333;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 13px;
+    margin-top: auto;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .laptop {
+        margin-top: 25px;
+        width: 50vw;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .hero {
+        padding-top: 110px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .features {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    .laptop {
+        width: 260px;
+        min-width: 240px;
+        transform: rotate(-12deg);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 340px;
+    }
+}
